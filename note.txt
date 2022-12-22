@@ -1,0 +1,108 @@
+Server Creation
+----------------
+
+install express
+           
+           -npm i express
+
+1. import express
+
+2. create an app using expresss
+
+3. create port number    (3000)
+
+4. create request according to our project
+
+
+
+nodemon Server
+---------------
+- npm i -g nodemon
+
+
+user Authentication Using express
+----------------------------------
+
+JWT(json web token) token
+--------------------------
+
+jsonwebtoken      -library            npm i jsonwebtoken
+sign()            -method used for generate token
+verify()          -method to verify jwt token
+
+
+Middlewares
+-----------
+
+ - middlewares have the capacity to control Server requests
+ - it's a function with 3 arguments (request,response,next)
+
+ -two types
+        
+        1 - Application specific Middlewares
+        2 - Router specific Middlewares
+
+
+
+Solving Run-time errors in JS
+------------------------------
+
+try catch
+
+try{
+       error causing code
+}
+catch{
+       solution
+}
+
+
+Mongo DB
+--------
+ -mongodb Server
+ -shell commands in mmongodb
+
+     - to see the database
+      
+        ->show dbs
+
+     -open dataabase
+
+         -> use dataabase_name
+
+     - view collections inside dataabase
+    
+         ->show collections
+
+     - to view datas inside collections
+
+          ->db.collections_name.find()
+
+     - to view any single data inside collection
+
+          ->db.collection_name.findOne({unique data to identify})
+
+     - to insert new data
+
+          ->db.collectiion_name.insertOne({data})
+
+     - to view single data according to a condition
+
+          ->db.collectiion_name.findOne({condition}) ----- single data
+          ->db.collectiion_name.find({condition}) ------ all data
+
+     - dalate
+
+          ->db.collectiion_name.deleteOne({data}) 
+
+          -delete count=number
+          -delete count=0           if nothing
+
+
+      -update
+
+         ->db.collectiion_name.updateOne({data to be update}),{new data} 
+
+    
+           
+          
